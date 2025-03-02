@@ -14,7 +14,8 @@ const BackgroundWrapper = styled.div`
   height: 100%;
   width: 100%;
   background-color: #0f172a; /* bg-slate-950 */
-  
+  overflow-x: hidden; /* Evita el scroll horizontal */
+
   &::before,
   &::after {
     content: "";
@@ -25,14 +26,14 @@ const BackgroundWrapper = styled.div`
     border-radius: 50%;
     background: radial-gradient(circle farthest-side, rgba(255, 0, 182, 0.15), rgba(255, 255, 255, 0));
   }
-  
+
   &::before {
-    left: -20%;
+    left: -10%; /* Reducido de -20% a -10% para evitar desbordamiento */
     top: -10%;
   }
-  
+
   &::after {
-    right: -20%;
+    right: -10%; /* Reducido de -20% a -10% */
     top: -10%;
   }
 `;

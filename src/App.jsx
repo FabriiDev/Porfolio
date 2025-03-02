@@ -8,15 +8,20 @@ import Contacto from "./components/Contacto";
 
 function App() {
   return (
-    <>
-      <Fondo>
-        <NavBar />
+    <Fondo>
+      <NavBar />
+      <div id="about" className="mt-20">
         <Presentacion />
-        <SegundaSec />
+      </div>
+      <SegundaSec />
+      <div id="projects">
+        
         <Proyectos />
+      </div>
+      <div id="contact">
         <Contacto />
-      </Fondo>
-    </>
+      </div>
+    </Fondo>
   );
 }
 

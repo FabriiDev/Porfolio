@@ -75,16 +75,16 @@ body {
 
 @keyframes breathe {
   0%, 100% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.845);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.845);
   }
   50% {
-    text-shadow: 0 0 40px rgba(255, 255, 255, 0.845);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.845);
   }
 }
 .shadow-proyectos {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.845);
   padding: 15px;
-  animation: breathe 4s ease-in-out infinite;
+  animation: breathe 5s ease-in-out infinite;
 }
 
 .shadow-contacto {
@@ -92,3 +92,7 @@ body {
 
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
