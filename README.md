@@ -1,4 +1,4 @@
-> .[!NOTE]
+> .[!NOTE].
 > El proyecto esta online puedes verlo [aquí](https://fabrizio-arias.vercel.app/)
 
 # Portafolio Personal de Fabrizio Arias
