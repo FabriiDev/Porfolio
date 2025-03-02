@@ -12,7 +12,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.9 }}
             className="text-lg hover:text-pink-500 transition-colors cursor-pointer"
           >
-            <Link to={item} smooth={true} duration={500}>
+            <Link to={item} smooth={true} duration={500} offset={-50}>
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </Link>
           </motion.div>
