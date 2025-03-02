@@ -1,0 +1,27 @@
+.shiny-text {
+  color: #ffffff93; /* Blanco fuerte para el color principal */
+  background: linear-gradient(
+    120deg,
+    rgba(236, 72, 153, 0) 30%, /* Transparente */
+    rgba(236, 72, 153, 1) 50%, /* Pink 500 de TailwindCSS */
+    rgba(236, 72, 153, 0) 70% /* Transparente */
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite; /* Ajustamos la duración a 3 segundos */
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}

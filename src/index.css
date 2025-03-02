@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #0f172a; /* bg-slate-950 */
+  color: white;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.body-bg::before,
+.body-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-side, rgba(255, 0, 182, 0.15), rgba(255, 255, 255, 0));
+}
+
+.body-bg::before {
+  left: -20%;
+  top: -10%;
+}
+
+.body-bg::after {
+  right: -20%;
+  top: -10%;
+}
+
+.bg-navbar{
+  background-color: rgba(255, 0, 183, 0.056);
+  backdrop-filter: blur(10px);
+}
+
+.img-shadow {
+  filter: drop-shadow(10px 10px 15px white);
+  transition: filter 2s
+}
+
+.w-90-pc{
+  width: 90%;
+}
+
+.clip-wave {
+  clip-path: polygon(0% 100%, 50% 85%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.card-proyectos img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-proyectos img.static-image {
+  opacity: 1;
+}
+
+.card-proyectos:hover img.static-image {
+  opacity: 0;
+}
+
+.card-proyectos img.gif-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-proyectos:hover img.gif-image {
+  opacity: 1;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.845);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.845);
+  }
+}
+.shadow-proyectos {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.845);
+  padding: 15px;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.shadow-contacto {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.845);
+
+}
+
